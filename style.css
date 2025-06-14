@@ -72,3 +72,19 @@ h2 {
   color: white;
   cursor: pointer;
 }
+.intro {
+  background: #f0f0f0;
+  padding: 40px 20px;
+  text-align: center;
+}
+.character-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+.character img {
+  width: 100%;
+  max-width: 120px;
+  border-radius: 12px;
+}
