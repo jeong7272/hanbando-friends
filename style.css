@@ -10,6 +10,14 @@ header.hero img {
   width: 100%;
   display: block;
 }
+.logo-container {
+  text-align: center;
+  padding: 20px 0;
+}
+.logo {
+  height: 80px;
+  object-fit: contain;
+}
 main {
   padding: 20px;
 }
