@@ -50,5 +50,29 @@
       </div>
     </section>
   </main>
+
+  <div id="modal" class="modal hidden">
+    <span class="close">&times;</span>
+    <img id="modal-image" />
+  </div>
+
+  <script>
+    const modal = document.getElementById('modal');
+    const modalImage = document.getElementById('modal-image');
+    const closeBtn = document.querySelector('.close');
+
+    document.querySelectorAll('.card img').forEach(img => {
+      img.addEventListener('click', () => {
+        modalImage.src = img.src;
+        modal.classList.remove('hidden');
+      });
+    });
+
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal || e.target === closeBtn) {
+        modal.classList.add('hidden');
+      }
+    });
+  </script>
 </body>
 </html>
