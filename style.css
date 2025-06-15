@@ -6,32 +6,17 @@ body {
   background: #fff;
   color: #333;
 }
-header.hero img:first-child {
-  width: 300px;
-  max-width: 90%;
-  display: block;
-  margin: 30px auto 10px;
-}
-header.hero img:last-child {
+header.hero img {
   width: 100%;
   display: block;
 }
-.intro {
-  background: #f0f0f0;
-  padding: 40px 20px;
+.logo-container {
   text-align: center;
+  padding: 20px 0;
 }
-.characters {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
-  margin-top: 30px;
-}
-.characters img {
-  width: 220px;
-  max-width: 100%;
-  border-radius: 12px;
+.logo {
+  height: 80px;
+  object-fit: contain;
 }
 main {
   padding: 20px;
@@ -57,7 +42,6 @@ h2 {
   width: 100%;
   height: auto;
   border-radius: 8px;
-  cursor: pointer;
 }
 .modal {
   position: fixed;
@@ -87,4 +71,20 @@ h2 {
   font-size: 2rem;
   color: white;
   cursor: pointer;
+}
+.intro {
+  background: #f0f0f0;
+  padding: 40px 20px;
+  text-align: center;
+}
+.character-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+.character img {
+  width: 100%;
+  max-width: 120px;
+  border-radius: 12px;
 }
